@@ -1,0 +1,44 @@
+.sidebar {
+    border-right: 1px solid hsl(210, 8%, 90%);
+    min-height: 700px;
+    width: 164px;
+    padding-top: 24px;
+    .sidebar-nav {
+        width: 164px;
+        position: sticky;
+        top: 74px;
+        bottom: 0;
+
+        a {
+            text-decoration: none;
+            display: block;
+            height: 33px;
+            line-height: 2;
+            padding: 4px 4px 4px 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #525960;
+            &:hover {
+                color: hsl(210, 8%, 5%);
+            }
+            &:nth-child(3), &:first-child {
+                padding-left: 8px;
+            }
+        }
+
+        p {
+            color: #6a737c;
+            font-size: 11px;
+            margin: 16px 0 4px 8px;
+        }
+
+        .target-active {
+            background-color: #f1f2f3;
+            color: #0c0d0e;
+            font-weight: bold;
+            border-right: 3px solid hsl(27, 90%, 55%);
+        }
+    }
+}

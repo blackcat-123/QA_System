@@ -1,0 +1,115 @@
+.questions-page {
+    padding: 50px 0 0 0;
+    display: flex;
+}
+
+@media only screen and (min-width: 1366px) {
+    .questions-page {
+        padding: 50px 120px 0;
+    }
+}
+
+.menu {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d7de;
+}
+
+.preview-question {
+    border-bottom: 1px solid #d3d7de;
+    height: 160px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+    }
+    .title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #0d6efd;
+        cursor: pointer;
+        &:hover {
+            color: #0a58ca;
+        }
+    }
+    .content {
+        flex-grow: 1;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        .user a {
+            text-decoration: none;
+        }
+    }
+    .titleLoading {
+        padding-bottom: 8px;
+    }
+    .contentLoading {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-grow: 1;
+    }
+    .footerLoading {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.list-question {
+    position: relative;
+}
+
+.header-content {
+    padding: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d3d7de;
+    > div:first-child {
+        margin-bottom: 27px;
+    }
+}
+
+.btnAskQuestion {
+    padding: 10.4px;
+    background-color: #0a95ff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 16px 20px;
+}
+
+.postTag {
+    display: flex;
+    gap: 8px;
+    .tag {
+        font-size: 12px;
+        color: #39739d;
+        background-color: #e1ecf4;
+        padding: 4.8px 6px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+        cursor: pointer;
+        &:hover {
+            color: #2c5877;
+            background-color: #d0e3f1;
+        }
+    }
+}
+
+.filter {
+    .active {
+        background-color: #e3e6e8;
+    }
+}
+
+.totalQuestion {
+    color: #232629;
+    font-size: 17px;
+}
